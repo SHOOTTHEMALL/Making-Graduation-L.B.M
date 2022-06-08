@@ -19,7 +19,7 @@ public class Btn : MonoBehaviour
 
     public void RightBtn()
     {
-        if (current == 2) return;
+        if (current == images.Count -1) return;
 
         images[current].gameObject.SetActive(false);
         images[current + 1].gameObject.SetActive(true);
