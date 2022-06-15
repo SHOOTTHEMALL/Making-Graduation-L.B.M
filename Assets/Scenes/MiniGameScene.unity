@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588322335e1204c4c87774c6fad61b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spinSpeed: 50
+  spinSpeed: 300
   isRolling: 0
   Arrow: {fileID: 223597634}
 --- !u!1 &1370631110

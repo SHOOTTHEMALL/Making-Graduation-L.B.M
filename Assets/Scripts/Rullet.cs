@@ -8,7 +8,12 @@ public class Rullet : MonoBehaviour
     public float spinSpeed = 50;
     public bool isRolling = false;
     public GameObject Arrow;
-    Vector3 dirVec = Vector3.down;
+    Vector3 dirVec;
+
+    private void Start()
+    {
+        dirVec = Vector3.down;
+    }
 
     private void Update()
     {
@@ -23,6 +28,8 @@ public class Rullet : MonoBehaviour
                 RaycastHit2D Hit = Physics2D.Raycast(Arrow.transform.position, dirVec, 4);
                 isRolling = false;
                 spinSpeed = 0;
+                //Hit.collider.gameObject.SetActive(false);
+                Debug.Log(Hit.collider.gameObject.name);
             }
         }
     }
