@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Btn : MonoBehaviour
 {
@@ -24,5 +25,10 @@ public class Btn : MonoBehaviour
         images[current].gameObject.SetActive(false);
         images[current + 1].gameObject.SetActive(true);
         current++;
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene(0);
     }
 }
